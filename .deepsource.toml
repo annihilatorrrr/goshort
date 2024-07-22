@@ -14,3 +14,12 @@ enabled = true
 [[transformers]]
 name = "gofumpt"
 enabled = true
+
+[[analyzers]]
+name = "javascript"
+
+[[transformers]]
+name = "standardjs"
+
+[[transformers]]
+name = "prettier"
