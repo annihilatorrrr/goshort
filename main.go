@@ -6,7 +6,6 @@ import (
 	"crypto/rand"
 	"encoding/json"
 	"fmt"
-	"github.com/jxskiss/base62"
 	"io"
 	"log"
 	"net/http"
@@ -15,6 +14,8 @@ import (
 	"strings"
 	"syscall"
 	"time"
+
+	"github.com/jxskiss/base62"
 )
 
 type requestBody struct {

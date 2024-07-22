@@ -1,37 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Link Shortener with No Database!</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/static/styles.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-</head>
-<body>
-<div class="container">
-    <h1>Link Shortener with No Database!</h1>
-    <p>Shorten your links for free with 10000% privacy!</p>
-    <form id="shortenForm">
-        <input type="text" id="longURL" placeholder="Enter your URL">
-        <input type="submit" value="Shorten">
-    </form>
-</div>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/static/styles.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Link Shortener with No Database!</h1>
+      <p>Shorten your links for free with 10000% privacy!</p>
+      <form id="shortenForm">
+        <input type="text" id="longURL" placeholder="Enter your URL" />
+        <input type="submit" value="Shorten" />
+      </form>
+    </div>
 
-<!-- Custom Popup -->
-<div id="customPopup" class="popup">
-    <div class="popup-content">
+    <!-- Custom Popup -->
+    <div id="customPopup" class="popup">
+      <div class="popup-content">
         <span class="close-button" onclick="closePopup()">&times;</span>
         <h2>Shortened Link!</h2>
-        <p id="shortenedLink"><a id="shortLink" href="#"
-                                 target="_blank">Here's your shortened link!</a></p>
-        <button id="copyButton" onclick="copyToClipboard()">Copy to
-            Clipboard</button>
+        <p id="shortenedLink">
+          <a id="shortLink" href="#" target="_blank"
+            >Here's your shortened link!</a
+          >
+        </p>
+        <button id="copyButton" onclick="copyToClipboard()">
+          Copy to Clipboard
+        </button>
+      </div>
     </div>
-</div>
-<!-- Footer -->
-<footer class="footer">
-    <p>With ❤ by <a href="https://memersgallery.tech">Memers Gallery</a>!</p>
-</footer>
-<script src="/static/script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>With ❤ by <a href="https://memersgallery.tech">Memers Gallery</a>!</p>
+    </footer>
+    <script src="/static/script.js"></script>
+  </body>
 </html>
