@@ -20,7 +20,7 @@ document
     }
     const data = await res.json();
     if (data.err) {
-      alert('Error: ' + data.err);
+      alert("Error: " + data.err);
       return;
     }
     if (data.hash) {
