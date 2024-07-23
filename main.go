@@ -171,7 +171,7 @@ func main() {
 	router.Handle("/static/", http.StripPrefix("/static/", fs))
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8080"
+		port = "9097"
 	}
 	server := &http.Server{
 		Addr:         "0.0.0.0:" + port,
