@@ -60,6 +60,10 @@ func dowork(r *http.Request) *requestBody {
 		jdata.Err = "URL parameter is missing!"
 		return jdata
 	}
+	if !strings.Contains(longURL, ".") {
+		jdata.Err = "Invalid Url ?"
+		return jdata
+	}
 	shortURL, err := encodeURL([]byte(longURL))
 	if err != nil {
 		jdata.Err = "Error encoding URL: " + err.Error()
